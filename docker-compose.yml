@@ -1,0 +1,6 @@
+version: '3'
+services:
+  fakah:
+    env_file:
+    - .env
+    image: hhollenstain/fakah-bot:latest
