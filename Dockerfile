@@ -5,4 +5,4 @@ WORKDIR /app
 
 RUN make live
 
-CMD ["tamago"]
+CMD ["fakah"]
