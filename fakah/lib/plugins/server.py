@@ -40,23 +40,25 @@ class Server(commands.Cog):
 
     @commands.command()
     async def fakah(self, ctx):
+        """
+        Information about what makes Fakah run!
+        """
         embed = discord.Embed(
             title = 'fakah Bot',
             description = 'fakah Bot information',
-            colour = discord.Colour.gold()
+            colour = discord.Colour.green()
         )
 
-        tamago_avatar = [
-                         'https://i.imgur.com/NtDueT7.png',
-                         'https://i.imgur.com/pzwv3Gs.png',
-                         'https://i.imgur.com/khPDnT2.png',
-                         'https://i.imgur.com/GEJjUD3.png',
-                         'https://i.imgur.com/e4EyhfI.png',
+        fakah_avatar = [
+                         'https://cdn.discordapp.com/attachments/360920244178386944/605149120457474270/Fakah2.png',
+                         'https://cdn.discordapp.com/attachments/295256054260826112/604752148227424286/44118538_10217585300408223_1134323183818637312_n.png',
+                         'https://cdn.discordapp.com/attachments/360920244178386944/605149251671949351/fakah.png'
                         ]
 
         embed.set_author(name='Fakahuman')
-        embed.set_thumbnail(url=random.choice(tamago_avatar))
-        embed.add_field(name='description', value=f'fakah is a WIP, add Tamago to your server! [add me]( https://discordapp.com/oauth2/authorize?client_id={self.fakah.app_id}&scope=bot)', inline=True)
+        embed.set_thumbnail(url=random.choice(fakah_avatar))
+        embed.add_field(name='description', value=f'fakah is a WIP, add Fakahuman to your server! [add me]( https://discordapp.com/oauth2/authorize?client_id={self.fakah.app_id}&scope=bot)', inline=True)
+        embed.add_field(name='Source Code', value=f'Want to see what makes Fakah run? [Source Code Here!](https://github.com/hhollenstain/fakah-bot)', inline=True)
         embed.add_field(name='Version', value=VERSION, inline=True)
 
         await ctx.send(embed=embed)

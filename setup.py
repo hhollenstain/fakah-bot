@@ -9,10 +9,7 @@ INSTALL_REQUIREMENTS = [
     'aiomeasures',
     'coloredlogs',
     'discord.py==1.2.3',
-    'oyaml',
     'pip==18.0',
-    'PyNaCl',
-    'pyowm==2.9.0',
     'pyyaml',
     'requests==2.21.0',
 ]

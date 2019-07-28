@@ -7,7 +7,7 @@ init:
 check: test
 	#pipenv check
 	pipenv run pylint setup.py
-	#pipenv run pylint tamago/*.py
+	#pipenv run pylint fakah/*.py
 
 test:
 	pipenv install -e ".[test]"
