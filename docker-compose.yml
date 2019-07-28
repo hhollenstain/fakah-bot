@@ -4,3 +4,4 @@ services:
     env_file:
     - .env
     image: hhollenstain/fakah-bot:latest
+    restart: always

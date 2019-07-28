@@ -50,7 +50,9 @@ class Server(commands.Cog):
         )
 
         fakah_avatar = [
+                         'https://cdn.discordapp.com/attachments/360920244178386944/605149120457474270/Fakah2.png',
                          'https://cdn.discordapp.com/attachments/295256054260826112/604752148227424286/44118538_10217585300408223_1134323183818637312_n.png',
+                         'https://cdn.discordapp.com/attachments/360920244178386944/605149251671949351/fakah.png'
                         ]
 
         embed.set_author(name='Fakahuman')
