@@ -28,7 +28,7 @@ BOT_PREFIX = ("?", "!")
 SHARD = os.getenv('SHARD') or 0
 SHARD_COUNT = os.getenv('SHARD_COUNT') or 1
 TOKEN = os.getenv('TOKEN')
-VOICE_CHANNEL_PREFIX = os.getenv('VOICE_CHANNEL_PREFIX') or 'GAME-ROOMS'
+VOICE_CHANNEL_PREFIX = os.getenv('VOICE_CHANNEL_PREFIX') or '!F '
 
 def main():
     """Entrypoint if called as an executable."""

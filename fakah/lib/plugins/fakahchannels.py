@@ -42,10 +42,10 @@ class FakahChannels(commands.Cog):
         self.fakah.loop.create_task(purge_unused_vc(self.fakah))
 
 
-    @commands.command()
-    async def gc(self, ctx, *, gcrequest: str=''):
+    @commands.command(name='vc', aliases=['gc'])
+    async def vc(self, ctx, *, gcrequest: str=''):
         """
-        creates a new channel with invite link <category name> [suffix if desired]
+        create voice channel vc <category> [optional suffix]
         """
         data =  await self.parse(ctx, gcrequest )
         if data['category'] is None:
@@ -102,7 +102,7 @@ class FakahChannels(commands.Cog):
             cat_list.append(cat.name.lower())
         return cat_list
 
-    @gc.error
+    @vc.error
     async def fakah_handler(self, ctx, error):
         """
         """

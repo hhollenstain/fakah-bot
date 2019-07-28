@@ -40,6 +40,9 @@ class Server(commands.Cog):
 
     @commands.command()
     async def fakah(self, ctx):
+        """
+        Information about what makes Fakah run!
+        """
         embed = discord.Embed(
             title = 'fakah Bot',
             description = 'fakah Bot information',
@@ -53,6 +56,7 @@ class Server(commands.Cog):
         embed.set_author(name='Fakahuman')
         embed.set_thumbnail(url=random.choice(fakah_avatar))
         embed.add_field(name='description', value=f'fakah is a WIP, add Fakahuman to your server! [add me]( https://discordapp.com/oauth2/authorize?client_id={self.fakah.app_id}&scope=bot)', inline=True)
+        embed.add_field(name='Source Code', value=f'Want to see what makes Fakah run? [Source Code Here!](https://github.com/hhollenstain/fakah-bot)', inline=True)
         embed.add_field(name='Version', value=VERSION, inline=True)
 
         await ctx.send(embed=embed)
